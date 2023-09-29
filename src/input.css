@@ -12,3 +12,11 @@ select,
 textarea {
   line-height: normal;
 }
+
+select {
+  background: url(../public/images/down.svg) no-repeat;
+  background-position: right 6px center;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}

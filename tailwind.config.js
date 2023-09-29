@@ -51,7 +51,9 @@ module.exports = {
     extend: {
       spacing: {
         "1/10": "10%",
+        "4/10": "40%",
         "9/10": "90%",
+        "27/100": "27%",
         "50%-": "-50%",
         "2.5-": "-.625rem",
         4.5: "1.125rem",
@@ -66,9 +68,11 @@ module.exports = {
         92: "23rem",
         106: "26.5rem",
         110: "27.5rem",
+        119: "29.75rem",
         120: "30rem",
         128: "32rem",
         150: "37.5rem",
+        "9/10screen": "90vh",
       },
       borderRadius: {
         "2.5xl": "1.25rem",
@@ -76,7 +80,7 @@ module.exports = {
       },
       screens: {
         tab: "820px",
-        mobile: "480px",
+        mobile: "520px",
       },
       borderWidth: {
         56: "3.5rem",
@@ -87,6 +91,9 @@ module.exports = {
       minWidth: {
         9: "2.25rem",
         12: "3rem",
+      },
+      minHeight: {
+        119: "29.75rem",
       },
     },
   },
