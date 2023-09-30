@@ -1633,6 +1633,10 @@ select {
     font-size: 3rem;
   }
 
+  .md\:text-xl{
+    font-size: 1.25rem;
+  }
+
   .md\:font-bold{
     font-weight: 700;
   }
