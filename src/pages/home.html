@@ -23,7 +23,7 @@
     <link href="../../dist/output.css" rel="stylesheet" />
   </head>
   <body
-    class="mb-15 h-screen w-screen bg-neutral-1000 font-inter text-neutral-50 md:mx-auto md:h-full md:w-3/4 md:border-x md:border-neutral-700 lg:w-2/3"
+    class="mb-15 h-9/10 w-screen bg-neutral-1000 font-inter text-neutral-50 md:mx-auto md:h-full md:w-3/4 md:border-x md:border-neutral-700 lg:w-2/3"
   >
     <dialog
       id="postModal"
@@ -1103,7 +1103,7 @@
     <div
       class="h-15 fixed bottom-0 left-0 right-0 flex items-center justify-center gap-10 border-t border-t-neutral-800 bg-neutral-1000 px-6 py-4.5"
     >
-      <button class="group h-6 w-6 focus:outline-none">
+      <button class="h-6 w-6 focus:outline-none">
         <svg
           width="24"
           height="24"
@@ -1111,50 +1111,35 @@
           aria-hidden="true"
           class="fill-neutral-50"
         >
-          <g class="transition-opacity duration-100 group-focus:opacity-0">
-            <path
-              d="M12 5.69L17 10.19V18H15V12H9V18H7V10.19L12 5.69ZM12 3L2 12H5V20H11V14H13V20H19V12H22L12 3Z"
-            ></path>
-          </g>
-          <g
-            class="opacity-0 transition-opacity duration-100 group-focus:opacity-100"
-          >
+          <g class="transition-opacity duration-100">
             <path d="M10 20V14H14V20H19V12H22L12 3L2 12H5V20H10Z"></path>
           </g>
         </svg>
       </button>
-      <button class="group h-6 w-6 focus:outline-none">
-        <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g class="transition-opacity duration-100 group-focus:opacity-0">
-            <path
-              d="M4 18C4 16.9391 4.42143 15.9217 5.17157 15.1716C5.92172 14.4214 6.93913 14 8 14H16C17.0609 14 18.0783 14.4214 18.8284 15.1716C19.5786 15.9217 20 16.9391 20 18C20 18.5304 19.7893 19.0391 19.4142 19.4142C19.0391 19.7893 18.5304 20 18 20H6C5.46957 20 4.96086 19.7893 4.58579 19.4142C4.21071 19.0391 4 18.5304 4 18Z"
-              stroke="white"
-              stroke-width="2"
-              stroke-linejoin="round"
-            ></path>
-            <path
-              d="M12 10C13.6569 10 15 8.65685 15 7C15 5.34315 13.6569 4 12 4C10.3431 4 9 5.34315 9 7C9 8.65685 10.3431 10 12 10Z"
-              stroke="white"
-              stroke-width="2"
-            ></path>
-          </g>
-          <g
-            class="opacity-0 transition-opacity duration-100 group-focus:opacity-100"
+      <button class="h-6 w-6 focus:outline-none">
+        <a href="./profile.html">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M8 7C8 5.93913 8.42143 4.92172 9.17157 4.17157C9.92172 3.42143 10.9391 3 12 3C13.0609 3 14.0783 3.42143 14.8284 4.17157C15.5786 4.92172 16 5.93913 16 7C16 8.06087 15.5786 9.07828 14.8284 9.82843C14.0783 10.5786 13.0609 11 12 11C10.9391 11 9.92172 10.5786 9.17157 9.82843C8.42143 9.07828 8 8.06087 8 7ZM8 13C6.67392 13 5.40215 13.5268 4.46447 14.4645C3.52678 15.4021 3 16.6739 3 18C3 18.7956 3.31607 19.5587 3.87868 20.1213C4.44129 20.6839 5.20435 21 6 21H18C18.7956 21 19.5587 20.6839 20.1213 20.1213C20.6839 19.5587 21 18.7956 21 18C21 16.6739 20.4732 15.4021 19.5355 14.4645C18.5979 13.5268 17.3261 13 16 13H8Z"
-              fill="white"
-            ></path>
-          </g>
-        </svg>
+            <g class="transition-opacity duration-100">
+              <path
+                d="M4 18C4 16.9391 4.42143 15.9217 5.17157 15.1716C5.92172 14.4214 6.93913 14 8 14H16C17.0609 14 18.0783 14.4214 18.8284 15.1716C19.5786 15.9217 20 16.9391 20 18C20 18.5304 19.7893 19.0391 19.4142 19.4142C19.0391 19.7893 18.5304 20 18 20H6C5.46957 20 4.96086 19.7893 4.58579 19.4142C4.21071 19.0391 4 18.5304 4 18Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M12 10C13.6569 10 15 8.65685 15 7C15 5.34315 13.6569 4 12 4C10.3431 4 9 5.34315 9 7C9 8.65685 10.3431 10 12 10Z"
+                stroke="white"
+                stroke-width="2"
+              ></path>
+            </g>
+          </svg>
+        </a>
       </button>
     </div>
 
