@@ -25,6 +25,137 @@
   <body
     class="mb-15 h-9/10 w-screen bg-neutral-1000 font-inter text-neutral-50 md:mx-auto md:h-full md:w-3/4 md:border-x md:border-neutral-700 lg:w-2/3"
   >
+    <dialog
+      id="editProfileModal"
+      class="md:w-170 min-h-screen min-w-full bg-neutral-1000 px-4 pb-3 pt-3 text-neutral-50 backdrop:bg-primary-100 md:min-h-max md:min-w-max md:rounded-2xl md:pb-8 md:backdrop:bg-primary-400/20"
+    >
+      <div class="flex items-center justify-between pb-4">
+        <button id="backBtn">
+          <img src="../../public/images/back.svg" alt="back" />
+        </button>
+        <button
+          id="saveProfileBtn"
+          class="rounded-4xl bg-neutral-50 px-6 py-2 font-bold text-neutral-1000 hover:bg-neutral-200"
+        >
+          Save
+        </button>
+      </div>
+
+      <div class="relative h-48">
+        <div
+          class="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 items-baseline gap-3"
+        >
+          <span class="rounded-full bg-neutral-1000/40 p-1">
+            <img src="../../public/images/camera.svg" alt="camera" />
+          </span>
+          <span class="mt-2 rounded-full bg-neutral-1000/40 p-1">
+            <img src="../../public/images/close.svg" alt="close" />
+          </span>
+        </div>
+        <img
+          src="https://pbs.twimg.com/profile_banners/1290358902991855616/1606326071/1500x500"
+          alt="Cover img"
+          class="h-full w-full"
+        />
+      </div>
+
+      <div class="relative -mt-10 ml-2 h-20 w-20 overflow-hidden rounded-full">
+        <span
+          class="absolute left-1/2 top-1/2 translate-x-50%- translate-y-50%- rounded-full bg-neutral-1000/40 p-1"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M3 21C2.45 21 1.979 20.804 1.587 20.412C1.195 20.02 0.999335 19.5493 1 19V7C1 6.45 1.196 5.979 1.588 5.587C1.98 5.195 2.45067 4.99933 3 5H6.15L8 3H14V5H8.875L7.05 7H3V19H19V10H21V19C21 19.55 20.804 20.021 20.412 20.413C20.02 20.805 19.5493 21.0007 19 21H3ZM19 7V5H17V3H19V1H21V3H23V5H21V7H19ZM11 17.5C12.25 17.5 13.3127 17.0623 14.188 16.187C15.0633 15.3117 15.5007 14.2493 15.5 13C15.5 11.75 15.0623 10.6873 14.187 9.812C13.3117 8.93667 12.2493 8.49933 11 8.5C9.75 8.5 8.68734 8.93767 7.812 9.813C6.93667 10.6883 6.49934 11.7507 6.5 13C6.5 14.25 6.93767 15.3127 7.813 16.188C8.68834 17.0633 9.75067 17.5007 11 17.5ZM11 15.5C10.3 15.5 9.70834 15.2583 9.225 14.775C8.74167 14.2917 8.5 13.7 8.5 13C8.5 12.3 8.74167 11.7083 9.225 11.225C9.70834 10.7417 10.3 10.5 11 10.5C11.7 10.5 12.2917 10.7417 12.775 11.225C13.2583 11.7083 13.5 12.3 13.5 13C13.5 13.7 13.2583 14.2917 12.775 14.775C12.2917 15.2583 11.7 15.5 11 15.5Z"
+              fill="#F9F9F9"
+            ></path>
+          </svg>
+        </span>
+        <img
+          src="https://lh3.googleusercontent.com/a/ACg8ocJEQRXFqEX_ODLBzxjX7qOZeoKFmzIVKnJnK4ygmrDKzfY=s576-c-no"
+          alt="avatar"
+          class="h-full w-full"
+        />
+      </div>
+
+      <div
+        class="relative mt-5 w-full rounded border border-neutral-500 transition-all duration-150 focus-within:border-primary-100"
+      >
+        <input
+          placeholder="John Doe"
+          id="username"
+          type="text"
+          class="peer/normal_input flex w-full bg-transparent p-3 text-xl text-neutral-50 placeholder-neutral-500 outline-none"
+          required=""
+        />
+        <label
+          for="username"
+          class="absolute left-2 top-2.5- bg-neutral-1000 px-1 text-xxs text-neutral-500 transition-all duration-150 peer-focus-within/normal_input:text-primary-100"
+        >
+          Name
+        </label>
+      </div>
+
+      <div
+        class="relative mt-6 w-full rounded border border-neutral-500 transition-all duration-150 focus-within:border-primary-100"
+      >
+        <textarea
+          placeholder="About you"
+          id="bio"
+          type="text"
+          class="peer/normal_input flex w-full resize-none bg-transparent p-3 text-xl text-neutral-50 placeholder-neutral-500 outline-none"
+          required=""
+        ></textarea>
+        <label
+          for="bio"
+          class="absolute left-2 top-2.5- bg-neutral-1000 px-1 text-xxs text-neutral-500 transition-all duration-150 peer-focus-within/normal_input:text-primary-100"
+        >
+          Bio
+        </label>
+      </div>
+
+      <div
+        class="relative mt-6 w-full rounded border border-neutral-500 transition-all duration-150 focus-within:border-primary-100"
+      >
+        <input
+          placeholder="India"
+          id="location"
+          type="text"
+          class="peer/normal_input flex w-full bg-transparent p-3 text-xl text-neutral-50 placeholder-neutral-500 outline-none"
+          required=""
+        />
+        <label
+          for="location"
+          class="absolute left-2 top-2.5- bg-neutral-1000 px-1 text-xxs text-neutral-500 transition-all duration-150 peer-focus-within/normal_input:text-primary-100"
+        >
+          Location
+        </label>
+      </div>
+
+      <div
+        class="relative mt-6 w-full rounded border border-neutral-500 transition-all duration-150 focus-within:border-primary-100"
+      >
+        <input
+          placeholder="xyz.com"
+          id="website"
+          type="text"
+          class="peer/normal_input flex w-full bg-transparent p-3 text-xl text-neutral-50 placeholder-neutral-500 outline-none"
+          required=""
+        />
+        <label
+          for="website"
+          class="absolute left-2 top-2.5- bg-neutral-1000 px-1 text-xxs text-neutral-500 transition-all duration-150 peer-focus-within/normal_input:text-primary-100"
+        >
+          Website
+        </label>
+      </div>
+    </dialog>
+
     <div>
       <img
         src="https://pbs.twimg.com/profile_banners/1290358902991855616/1606326071/1500x500"
@@ -41,6 +172,7 @@
           class="-mt-8 h-17 w-17 rounded-full border-4 border-neutral-1000"
         />
         <button
+          id="editProfileBtn"
           class="rounded-4xl border border-stroke/80 px-5 py-2 text-sm font-bold text-neutral-50"
         >
           Edit profile
@@ -109,13 +241,31 @@
           />
           <label
             for="posts"
-            class="block h-14 w-full cursor-pointer py-4 text-center font-medium text-neutral-400 transition-all duration-100 peer-checked/posts:font-bold peer-checked/posts:text-neutral-50"
+            class="block w-full cursor-pointer py-4 text-center font-medium text-neutral-400 transition-all duration-100 peer-checked/posts:font-bold peer-checked/posts:text-neutral-50"
           >
             Posts
           </label>
 
           <div
             class="hidden h-1 w-14 rounded-2.5xl bg-primary-100 peer-checked/posts:block"
+          ></div>
+        </div>
+        <div class="flex w-full flex-col items-center hover:bg-neutral-900">
+          <input
+            type="radio"
+            class="peer/replies hidden w-full"
+            id="replies"
+            value="replies"
+            name="home_tabs"
+          />
+          <label
+            for="replies"
+            class="block w-full cursor-pointer border-primary-100 py-4 text-center font-medium text-neutral-400 transition-all duration-100 peer-checked/replies:font-bold peer-checked/replies:text-neutral-50"
+          >
+            Replies
+          </label>
+          <div
+            class="hidden h-1 w-17.25 rounded-2.5xl bg-primary-100 peer-checked/replies:block"
           ></div>
         </div>
       </div>
@@ -1067,7 +1217,7 @@
     </div>
 
     <div
-      class="h-15 fixed bottom-0 left-0 right-0 flex items-center justify-center gap-10 border-t border-t-neutral-800 bg-neutral-1000 px-6 py-4.5"
+      class="fixed bottom-0 left-0 right-0 flex h-15 items-center justify-center gap-10 border-t border-t-neutral-800 bg-neutral-1000 px-6 py-4.5"
     >
       <button class="h-6 w-6 focus:outline-none">
         <a href="./home.html">
@@ -1106,5 +1256,6 @@
         </svg>
       </button>
     </div>
+    <script src="./profile.js" type="text/javascript"></script>
   </body>
 </html>
