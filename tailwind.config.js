@@ -58,6 +58,7 @@ module.exports = {
         "2.5-": "-.625rem",
         4.5: "1.125rem",
         13: "3.25rem",
+        15: "3.75rem",
         17: "4.25rem",
         17.25: "4.375rem",
         26: "6.5rem",
@@ -89,7 +90,7 @@ module.exports = {
         65: "0.65",
       },
       minWidth: {
-        9: "2.25rem",
+        10: "2.5rem",
         12: "3rem",
       },
       minHeight: {
