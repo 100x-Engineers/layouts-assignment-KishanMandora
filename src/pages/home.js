@@ -6,6 +6,8 @@ const tweetLength = document.getElementById("tweetLength");
 const modalTweetPost = document.getElementById("modalTweetPost");
 const tweetText = document.getElementById("tweetText");
 const tweetPost = document.getElementById("tweetPost");
+const copyBtn = document.getElementById("copyBtn");
+const toast = document.getElementById("toast");
 
 const tweetLengthLimit = 280;
 
@@ -68,4 +70,14 @@ tweetText.addEventListener("keyup", () => {
     tweetPost.classList.remove("cursor-not-allowed");
     tweetPost.classList.add("bg-primary-100");
   }
+});
+
+copyBtn.addEventListener("click", () => {
+  toast.classList.remove("hidden");
+  toast.classList.add("block");
+
+  setTimeout(() => {
+    toast.classList.add("hidden");
+    toast.classList.remove("block");
+  }, 3000);
 });

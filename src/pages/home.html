@@ -54,7 +54,7 @@
               placeholder="What's happening?"
               id="tweetTextArea"
               type="text"
-              class="h-8/10screen mt-2 flex w-full resize-none bg-transparent text-neutral-50 placeholder-neutral-500 caret-primary-100 outline-none md:h-60"
+              class="mt-2 flex h-8/10screen w-full resize-none bg-transparent text-neutral-50 placeholder-neutral-500 caret-primary-100 outline-none md:h-60"
             ></textarea>
           </div>
         </div>
@@ -70,7 +70,7 @@
 
     <div class="z-10 bg-neutral-1000/65 backdrop-blur-md md:sticky md:top-0">
       <h2 class="hidden p-4 text-semi-xl font-bold md:block">Home</h2>
-      <div class="h-15 relative block w-full px-4 py-3 md:hidden">
+      <div class="relative block h-15 w-full px-4 py-3 md:hidden">
         <img
           src="https://lh3.googleusercontent.com/a/ACg8ocIHVWbq0vnbTfhFdE_CECqzbvmfFNxdFiVuGfdzwsRe2g=s576-c-no"
           alt="profile"
@@ -355,7 +355,7 @@
               <span class="text-sm text-neutral-500"> 99.6K</span>
             </div>
             <div class="flex items-center gap-1">
-              <button class="group h-6 w-6 focus:outline-none">
+              <button class="group h-6 w-6 focus:outline-none" id="copyBtn">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="17"
@@ -1101,7 +1101,14 @@
     </button>
 
     <div
-      class="h-15 fixed bottom-0 left-0 right-0 flex items-center justify-center gap-10 border-t border-t-neutral-800 bg-neutral-1000 px-6 py-4.5"
+      id="toast"
+      class="fixed bottom-20 left-1/2 hidden h-11 w-52 -translate-x-1/2 rounded-4xl bg-fill-200 px-8 py-3 ease-in-out"
+    >
+      <span class="text-semi-base"> Copied to clipboard. </span>
+    </div>
+
+    <div
+      class="fixed bottom-0 left-0 right-0 flex h-15 items-center justify-center gap-10 border-t border-t-neutral-800 bg-neutral-1000 px-6 py-4.5"
     >
       <button class="h-6 w-6 focus:outline-none">
         <svg
