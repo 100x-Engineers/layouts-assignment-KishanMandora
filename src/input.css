@@ -1,3 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*,
+button,
+input,
+optgroup,
+select,
+textarea {
+  line-height: normal;
+}
+
+select {
+  background: url(../public/images/down.svg) no-repeat;
+  background-position: right 6px center;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
